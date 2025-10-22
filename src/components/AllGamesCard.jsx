@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const AllGamesCard = ({data}) => {
-    const {coverPhoto, title, category, ratings} = data;
+    const {coverPhoto, title, category, ratings, id} = data;
     return (
-         <div>
+         <div className="transition-all duration-500 ease-out hover:-translate-y-2 hover:scale-105 hover:shadow-[0_0_25px_rgba(255,215,0,0.5)] hover:border-red-500 border border-transparent rounded-lg overflow-hidden">
                 <div className="h-56">
                 <img src={coverPhoto} alt="" className="w-full h-full object-cover" /> </div>
         
@@ -21,6 +21,7 @@ const AllGamesCard = ({data}) => {
               <div className="bg-gray-800 px-5 py-3 text-white flex items-center justify-between">
                 <Link
                   className="bg-green-600 px-2 py-1 rounded text-sm font-bold"
+                   to={`/gameDetails/${id}`}
                 >
                   Details
                 </Link>
