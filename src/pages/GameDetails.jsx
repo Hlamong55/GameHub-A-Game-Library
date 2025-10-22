@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useLoaderData, useParams } from "react-router";
 
 const GameDetails = () => {
+
   const { id } = useParams();
   const details = useLoaderData();
   const singleGame = details.find((game) => String(game.id) === id);
+
+
+    useEffect(() => {
+    if (singleGame?.title) {
+      document.title = `${singleGame.title} | GameHub`;
+    } else {
+      document.title = "Game Details | GameHub";
+    }
+  }, [singleGame]);
+
 
 
   if (!singleGame) {
@@ -22,7 +33,8 @@ const GameDetails = () => {
   } = singleGame;
 
   return (
-    <div className="bg-gray-200 text-white py-16 px-6 sm:px-10 font-sans">
+    <div className="bg-gray-200 text-white py-20 px-6 sm:px-10 font-sans"
+    style={{backgroundImage: `url(https://i.ibb.co.com/7NdTGGZV/07321214-aad8-4167-b316-bf8f96c8cf38.jpg)`}}>
       <div className="max-w-6xl mx-auto shadow-2xl rounded-lg overflow-hidden border border-gray-800 bg-[#141414]">
         <div className="md:flex">
           <div

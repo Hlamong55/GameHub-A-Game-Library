@@ -31,7 +31,7 @@ const Banner = () => {
         >
           <SwiperSlide>
             <div
-              className="hero w-full h-[400px] bg-cover bg-center"
+              className="hero w-full h-[450px] bg-cover bg-center"
               style={{
                 backgroundImage: `url(${banner1})`,
               }}
@@ -39,7 +39,7 @@ const Banner = () => {
               <div className="bg-opacity-40 hero-overlay"></div>
               <div className="hero-content text-white flex flex-col justify-center items-start pl-10">
                 <div className="max-w-lg">
-                  <h1 className="mb-4 text-4xl font-extrabold leading-tight">
+                  <h1 className="mb-4 text-5xl font-extrabold leading-tight">
                     Apex Legends: Mobile
                   </h1>
                   <p className="mb-6 text-lg">
@@ -51,7 +51,7 @@ const Banner = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className="hero w-full h-[400px] bg-cover bg-center"
+              className="hero w-full h-[450px] bg-cover bg-center"
               style={{
                 backgroundImage: `url(${banner2})`,
               }}
@@ -59,7 +59,7 @@ const Banner = () => {
               <div className="bg-opacity-40 hero-overlay"></div>
               <div className="hero-content text-white flex flex-col justify-center items-start pl-10">
                 <div className="max-w-lg">
-                  <h1 className="mb-4 text-4xl font-extrabold leading-tight">
+                  <h1 className="mb-4 text-5xl font-extrabold leading-tight">
                     Clash of Clans
                   </h1>
                   <p className="mb-6 text-lg">
@@ -73,7 +73,7 @@ const Banner = () => {
 
           <SwiperSlide>
             <div
-              className="hero w-full h-[400px] bg-cover bg-center"
+              className="hero w-full h-[450px] bg-cover bg-center"
               style={{
                 backgroundImage: `url(${banner3})`,
               }}
@@ -81,7 +81,7 @@ const Banner = () => {
               <div className="bg-opacity-50 hero-overlay"></div>
               <div className="hero-content text-white flex flex-col justify-center items-start pl-10">
                 <div className="max-w-lg">
-                  <h1 className="mb-4 text-4xl font-extrabold leading-tight">
+                  <h1 className="mb-4 text-5xl font-extrabold leading-tight">
                     The Legend of Zelda: Breath of the Wild
                   </h1>
                   <p className="mb-6 text-lg">
@@ -95,7 +95,7 @@ const Banner = () => {
 
           <SwiperSlide>
             <div
-              className="hero w-full h-[400px] bg-cover bg-center"
+              className="hero w-full h-[450px] bg-cover bg-center"
               style={{
                 backgroundImage: `url(${banner4})`,
               }}
@@ -103,10 +103,10 @@ const Banner = () => {
               <div className="bg-opacity-50 hero-overlay"></div>
               <div className="hero-content text-white flex flex-col justify-center items-start pl-10">
                 <div className="max-w-lg">
-                  <h1 className="mb-4 text-4xl font-extrabold leading-tight">
+                  <h1 className="mb-4 text-5xl font-extrabold leading-tight">
                     Asphalt 9: Legends
                   </h1>
-                  <p className="mb-6 text-lg">
+                  <p className="mb-6 text-xl">
                     An arcade racing experience, featuring thrilling fast-paced
                     gameplay with stunning graphics and exciting car races.
                   </p>

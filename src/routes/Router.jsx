@@ -3,6 +3,9 @@ import HomeLayout from "../layouts/HomeLayout";
 import Home from "../pages/Home";
 import AllGames from "../pages/AllGames";
 import GameDetails from "../pages/GameDetails";
+import Login from "../pages/Login";
+import About from "../pages/About";
+import Register from "../pages/Register";
 
 const router = createBrowserRouter([
   {
@@ -24,11 +27,19 @@ const router = createBrowserRouter([
         element: <GameDetails />,
         loader: async () => fetch("/games.json"),
       },
+      {
+        path: "/about",
+        element: <About></About>,
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
+      },
     ],
-  },
-  {
-    path: "/auth",
-    element: <h2>Authentication Layout</h2>,
   },
   {
     path: "/*",

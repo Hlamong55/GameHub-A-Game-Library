@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Banner from '../components/Banner';
 import { useLoaderData, useNavigate } from 'react-router';
 import GameCard from '../components/GameCard';
@@ -6,6 +6,10 @@ import { Gamepad2 } from 'lucide-react';
 import Newsletter from '../components/NewsLetter';
 
 const Home = () => {
+   useEffect(() => {
+      document.title = "Home | GameHub";
+    }, []);
+
   const gamesData = useLoaderData();
   const navigate = useNavigate();
 

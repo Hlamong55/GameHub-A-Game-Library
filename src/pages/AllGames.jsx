@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLoaderData } from 'react-router';
 import AllGamesCard from '../components/AllGamesCard';
 
 const AllGames = () => {
+    useEffect(() => {
+        document.title = "Games | GameHub";
+      }, []);
+
     const allData = useLoaderData();
     return (
         <div className='bg-gray-200'>
