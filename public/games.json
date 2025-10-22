@@ -1,0 +1,202 @@
+[
+  {
+    "id": "1",
+    "title": "PUBG Mobile",
+    "coverPhoto": "https://i.ibb.co.com/V02vLk9V/pubg-mobile-battle-royale-video-game-g65tnwjjt1iwoyto.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.pubgmobile.com",
+    "description": "A free-to-play battle royale game where players fight to be the last one standing.",
+    "ratings": "4.3",
+    "developer": "Krafton"
+  },
+  {
+    "id": "2",
+    "title": "Call of Duty: Mobile",
+    "coverPhoto": "https://i.ibb.co.com/5X0J2ypq/4k-call-of-duty-mobile-poster-5c50tuqihdfcliuz.jpg",
+    "category": "FPS",
+    "downloadLink": "https://www.callofduty.com/mobile",
+    "description": "Experience the thrill of Call of Duty on your mobile device with various modes and maps.",
+    "ratings": "4.6",
+    "developer": "Activision"
+  },
+  {
+    "id": "3",
+    "title": "Free Fire",
+    "coverPhoto": "https://i.ibb.co.com/7dnjdN5M/46e17f0fc03734bf7b93defbc4e5b404.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://ff.garena.com",
+    "description": "A fast-paced survival game where players compete to be the last one alive.",
+    "ratings": "4.2",
+    "developer": "Garena"
+  },
+  {
+    "id": "4",
+    "title": "Among Us",
+    "coverPhoto": "https://i.ibb.co.com/67VvVy3V/1290-3840x2160-desktop-4k-among-us-background.jpg",
+    "category": "Party",
+    "downloadLink": "https://innersloth.itch.io/among-us",
+    "description": "A multiplayer game where players work together to complete tasks while impostors try to sabotage them.",
+    "ratings": "4.5",
+    "developer": "Innersloth"
+  },
+  {
+    "id": "5",
+    "title": "Minecraft",
+    "coverPhoto": "https://i.ibb.co.com/bMn9hpbN/minecraft-background-cfljc4haleghnajo.jpg",
+    "category": "Sandbox",
+    "downloadLink": "https://www.minecraft.net",
+    "description": "A game about placing blocks and going on adventures in a procedurally generated world.",
+    "ratings": "4.8",
+    "developer": "Mojang"
+  },
+  {
+    "id": "6",
+    "title": "Fortnite",
+    "coverPhoto": "https://i.ibb.co.com/wqSwKfW/Fortnite-Pictures-The-Ultimate-Visual-Collection-For-Every-Fan-1.webp",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.epicgames.com/fortnite",
+    "description": "A free-to-play battle royale game with building mechanics and a vibrant world.",
+    "ratings": "4.4",
+    "developer": "Epic Games"
+  },
+  {
+    "id": "7",
+    "title": "League of Legends: Wild Rift",
+    "coverPhoto": "https://i.ibb.co.com/fzKBPgwr/3705653167ef8f43acdc03fb2f0a469d5b3086fd-1920x1080.jpg",
+    "category": "MOBA",
+    "downloadLink": "https://wildrift.leagueoflegends.com",
+    "description": "A mobile version of the popular MOBA game League of Legends, offering fast-paced 5v5 matches.",
+    "ratings": "4.7",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "8",
+    "title": "Valorant Mobile",
+    "coverPhoto": "https://i.ibb.co.com/3YjLD3FS/valorant-1920x1080-oyk1prl7pymr3uil.jpg",
+    "category": "FPS",
+    "downloadLink": "https://playvalorant.com",
+    "description": "A tactical shooter game where players choose agents with unique abilities to compete in team-based matches.",
+    "ratings": "4.5",
+    "developer": "Riot Games"
+  },
+  {
+    "id": "9",
+    "title": "Apex Legends Mobile",
+    "coverPhoto": "https://i.ibb.co.com/cc0r8Bwt/wallpapersden-com-77216-1920x1080.jpg",
+    "category": "Battle Royale",
+    "downloadLink": "https://www.ea.com/games/apex-legends",
+    "description": "A free-to-play battle royale game featuring unique characters and fast-paced combat.",
+    "ratings": "4.3",
+    "developer": "Respawn Entertainment"
+  },
+  {
+    "id": "10",
+    "title": "Genshin Impact",
+    "coverPhoto": "https://i.ibb.co.com/7d4y2P2n/genshin-impact-wlq3ykrxbaoadjow.jpg",
+    "category": "Action RPG",
+    "downloadLink": "https://genshin.mihoyo.com",
+    "description": "An open-world action RPG with elemental magic and a vast world to explore.",
+    "ratings": "4.6",
+    "developer": "miHoYo"
+  },
+  {
+    "id": "11",
+    "title": "FIFA Mobile",
+    "coverPhoto": "https://i.ibb.co.com/7d7knSh0/6d538-16424964372316-1920.webp",
+    "category": "Sports",
+    "downloadLink": "https://www.fifa.com/fifamobile",
+    "description": "Experience the thrill of football with real teams, players, and leagues.",
+    "ratings": "4.4",
+    "developer": "EA Sports"
+  },
+  {
+    "id": "12",
+    "title": "Clash Royale",
+    "coverPhoto": "https://i.ibb.co.com/Mkyb1r9k/wp4898055.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://clashroyale.com",
+    "description": "A real-time strategy game where players battle using cards representing troops and spells.",
+    "ratings": "4.5",
+    "developer": "Supercell"
+  },
+  {
+    "id": "13",
+    "title": "Clash of Clans",
+    "coverPhoto": "https://i.ibb.co.com/GfLNxt67/1302413.jpg",
+    "category": "Strategy",
+    "downloadLink": "https://clashofclans.com",
+    "description": "Build your village, train your army, and raid other players to earn resources.",
+    "ratings": "4.6",
+    "developer": "Supercell"
+  },
+  {
+    "id": "14",
+    "title": "Candy Crush Saga",
+    "coverPhoto": "https://i.ibb.co.com/TBMJ26yK/855982.png",
+    "category": "Puzzle",
+    "downloadLink": "https://king.com/game/candycrush",
+    "description": "A match-three puzzle game with colorful candies and challenging levels.",
+    "ratings": "4.2",
+    "developer": "King"
+  },
+  {
+    "id": "15",
+    "title": "Pokémon GO",
+    "coverPhoto": "https://i.ibb.co.com/TDXFzWCj/pokemon-go-72o54uz3g9w6rxyg.jpg",
+    "category": "AR",
+    "downloadLink": "https://pokemongolive.com",
+    "description": "An augmented reality game where players catch Pokémon in the real world.",
+    "ratings": "4.4",
+    "developer": "Niantic"
+  },
+  {
+    "id": "16",
+    "title": "Subway Surfers",
+    "coverPhoto": "https://i.ibb.co.com/R4ShL2yz/desktop-wallpaper-6-subway-surfers-subway-surfers-games.jpg",
+    "category": "Endless Runner",
+    "downloadLink": "https://sybo.com/games/subway-surfers",
+    "description": "An endless runner game where players dodge trains and collect coins.",
+    "ratings": "4.3",
+    "developer": "SYBO Games"
+  },
+  {
+    "id": "17",
+    "title": "Temple Run",
+    "coverPhoto": "https://i.ibb.co.com/PZgG6YY3/icon.png",
+    "category": "Endless Runner",
+    "downloadLink": "https://www.imangi.com/temple-run",
+    "description": "An endless runner game where players escape from a temple while avoiding obstacles.",
+    "ratings": "4.1",
+    "developer": "Imangi Studios"
+  },
+  {
+    "id": "18",
+    "title": "Angry Birds 2",
+    "coverPhoto": "https://i.ibb.co.com/QjPj13mx/614171.jpg",
+    "category": "Puzzle",
+    "downloadLink": "https://www.rovio.com/en/games/angry-birds-2",
+    "description": "A physics-based puzzle game where players launch birds to destroy structures.",
+    "ratings": "4.4",
+    "developer": "Rovio Entertainment"
+  },
+  {
+    "id": "19",
+    "title": "Asphalt 9: Legends",
+    "coverPhoto": "https://i.ibb.co.com/QvfL3Yty/desktop-wallpaper-asphalt-9-legends-is-a-perfect-fit-for-pinterest.jpg",
+    "category": "Racing",
+    "downloadLink": "https://asphaltlegends.com",
+    "description": "A high-speed racing game with stunning graphics and a wide range of cars.",
+    "ratings": "4.5",
+    "developer": "Gameloft"
+  },
+  {
+    "id": "20",
+    "title": "Real Racing 3",
+    "coverPhoto": "https://i.ibb.co.com/x8PPR3NC/desktop-wallpaper-real-racing-3-update-unlocks-up-to-six-new-cars.jpg",
+    "category": "Racing",
+    "downloadLink": "https://www.ea.com/games/real-racing/real-racing-3",
+    "description": "A racing game with realistic graphics and a variety of cars and tracks.",
+    "ratings": "4.6",
+    "developer": "Firemonkeys Studios"
+  }
+]
