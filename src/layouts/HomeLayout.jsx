@@ -2,6 +2,8 @@ import React from 'react';
 import { Outlet } from 'react-router';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import Home from '../pages/Home';
+import AllGamesCard from '../components/AllGamesCard';
 
 const HomeLayout = () => {
     return (
@@ -10,7 +12,10 @@ const HomeLayout = () => {
                 <Navbar></Navbar>
             </header>
             <main>
-                <Outlet></Outlet>
+                <Outlet>
+                    <Home></Home>
+                    <AllGamesCard></AllGamesCard>
+                </Outlet>
             </main>
             <footer>
                 <Footer></Footer>

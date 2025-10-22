@@ -6,7 +6,7 @@
     "category": "Battle Royale",
     "downloadLink": "https://www.pubgmobile.com",
     "description": "A free-to-play battle royale game where players fight to be the last one standing.",
-    "ratings": "4.3",
+    "ratings": "4.8",
     "developer": "Krafton"
   },
   {
@@ -46,7 +46,7 @@
     "category": "Sandbox",
     "downloadLink": "https://www.minecraft.net",
     "description": "A game about placing blocks and going on adventures in a procedurally generated world.",
-    "ratings": "4.8",
+    "ratings": "4.4",
     "developer": "Mojang"
   },
   {
@@ -96,7 +96,7 @@
     "category": "Action RPG",
     "downloadLink": "https://genshin.mihoyo.com",
     "description": "An open-world action RPG with elemental magic and a vast world to explore.",
-    "ratings": "4.6",
+    "ratings": "4.4",
     "developer": "miHoYo"
   },
   {
@@ -106,7 +106,7 @@
     "category": "Sports",
     "downloadLink": "https://www.fifa.com/fifamobile",
     "description": "Experience the thrill of football with real teams, players, and leagues.",
-    "ratings": "4.4",
+    "ratings": "4.6",
     "developer": "EA Sports"
   },
   {
@@ -186,7 +186,7 @@
     "category": "Racing",
     "downloadLink": "https://asphaltlegends.com",
     "description": "A high-speed racing game with stunning graphics and a wide range of cars.",
-    "ratings": "4.5",
+    "ratings": "4.7",
     "developer": "Gameloft"
   },
   {
@@ -196,7 +196,7 @@
     "category": "Racing",
     "downloadLink": "https://www.ea.com/games/real-racing/real-racing-3",
     "description": "A racing game with realistic graphics and a variety of cars and tracks.",
-    "ratings": "4.6",
+    "ratings": "4.5",
     "developer": "Firemonkeys Studios"
   }
 ]

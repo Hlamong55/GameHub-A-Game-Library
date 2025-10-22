@@ -6,7 +6,7 @@ const Navbar = () => {
   const navLinks = (
     <>
       <li><NavLink to="/" className="hover:text-yellow-400">Home</NavLink></li>
-      <li><NavLink to="/games" className="hover:text-yellow-400">Games</NavLink></li>
+      <li><NavLink to="/allGames" className="hover:text-yellow-400">Games</NavLink></li>
       <li><NavLink to="/about" className="hover:text-yellow-400">About</NavLink></li>
       <li><NavLink to="/support" className="hover:text-yellow-400">Support</NavLink></li>
     </>

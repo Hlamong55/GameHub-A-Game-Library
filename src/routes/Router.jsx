@@ -1,18 +1,24 @@
 import { createBrowserRouter } from "react-router";
 import HomeLayout from "../layouts/HomeLayout";
 import Home from "../pages/Home";
+import AllGames from "../pages/AllGames";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <HomeLayout></HomeLayout>,
-    children:
-    [
-        {
-            path: "/",
-            element: <Home></Home>
-        }
-    ]
+    children: [
+      {
+        path: "/",
+        element: <Home></Home>,
+        loader: () => fetch("/games.json"),
+      },
+      {
+        path: "/allGames",
+        element: <AllGames></AllGames>,
+        loader: () => fetch("/games.json"),
+      },
+    ],
   },
   {
     path: "/auth",
