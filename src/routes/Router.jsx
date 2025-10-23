@@ -6,6 +6,7 @@ import GameDetails from "../pages/GameDetails";
 import Login from "../pages/Login";
 import About from "../pages/About";
 import Register from "../pages/Register";
+import ErrorPage from "../pages/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -43,7 +44,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/*",
-    element: <h2>Error404</h2>,
+    element: <ErrorPage></ErrorPage>
   },
 ]);
 

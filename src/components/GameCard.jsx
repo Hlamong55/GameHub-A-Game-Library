@@ -14,7 +14,7 @@ const GameCard = ({game}) => {
             <h2 className="text-white text-xl font-bold drop-shadow-lg">
             {title}
           </h2>
-          <p className="text-sm text-gray-300 badge badge-dash">
+          <p className="text-sm font-semibold text-gray-200 badge badge-dash">
              {category}
           </p>
         </div>
@@ -23,12 +23,12 @@ const GameCard = ({game}) => {
       <div className="bg-gray-800 px-5 py-3 text-white flex items-center justify-between">
         <Link
             to={`/gameDetails/${id}`}
-          className="bg-green-600 px-2 py-1 rounded text-sm font-bold"
+          className="bg-green-600 px-3.5 py-1.5 rounded  font-bold"
         >
           Details
         </Link>
         <div className="flex items-center justify-between">
-          <span className="text-yellow-400 font-semibold">★ {ratings}/5</span>
+          <span className="text-yellow-400 font-bold">★ {ratings}/5</span>
         </div>
       </div>
         </div>

@@ -33,7 +33,7 @@ const GameDetails = () => {
   } = singleGame;
 
   return (
-    <div className="bg-gray-200 text-white py-20 px-6 sm:px-10 font-sans"
+    <div className=" text-white py-20 px-6 sm:px-10 font-sans"
     style={{backgroundImage: `url(https://i.ibb.co.com/7NdTGGZV/07321214-aad8-4167-b316-bf8f96c8cf38.jpg)`}}>
       <div className="max-w-6xl mx-auto shadow-2xl rounded-lg overflow-hidden border border-gray-800 bg-[#141414]">
         <div className="md:flex">
@@ -41,22 +41,22 @@ const GameDetails = () => {
             className="md:w-1/2 bg-cover bg-center"
             style={{
               backgroundImage: `url(${coverPhoto})`,
-              minHeight: "450px",
+              minHeight: "480px",
             }}
           ></div>
 
           <div className="md:w-1/2 p-6 flex flex-col justify-between">
             <div>
-              <h1 className="text-8xl sm:text-4xl font-bold text-yellow-400 mb-3 tracking-wide">
+              <h1 className="text-8xl sm:text-4xl font-bold text-yellow-400 mb-4 tracking-wide">
                 {title}
               </h1>
 
-              <p className="text-gray-300 text-lg mb-8">{description}</p>
+              <p className="text-gray-200 text-lg mb-8">{description}</p>
 
               <div className="space-y-2.5 text-lg">
                 <p>
                   <span className="text-gray-400">Genre:</span>{" "}
-                  <span className="text-pink-400 font-semibold">
+                  <span className="text-pink-400 font-bold">
                     {category}
                   </span>
                 </p>
@@ -67,7 +67,7 @@ const GameDetails = () => {
                 </p>
                 <p>
                   <span className="text-gray-400">Developed By:</span>{" "}
-                  <span className="text-pink-400 font-medium">
+                  <span className="text-pink-400 font-bold">
                     {developer}
                   </span>
                 </p>
@@ -75,7 +75,7 @@ const GameDetails = () => {
             </div>
 
             <div className="mt-6 flex  flex-wrap gap-2">
-              <span className="bg-red-600 px-3 py-1 rounded-full">
+              <span className="bg-red-500 px-3.5 py-1.5 rounded-full font-semibold">
                 #{category}
               </span>
             </div>
