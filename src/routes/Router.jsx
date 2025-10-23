@@ -7,6 +7,9 @@ import Login from "../pages/Login";
 import About from "../pages/About";
 import Register from "../pages/Register";
 import ErrorPage from "../pages/ErrorPage";
+import AuthLayout from "../layouts/AuthLayout";
+import PrivateRoute from "./PrivateRoute";
+import MyProfile from "../pages/MyProfile";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +28,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/gameDetails/:id",
-        element: <GameDetails />,
+        element: (
+            <PrivateRoute>
+                <GameDetails></GameDetails>
+            </PrivateRoute>
+        ),
         loader: async () => fetch("/games.json"),
       },
       {
@@ -33,18 +40,32 @@ const router = createBrowserRouter([
         element: <About></About>,
       },
       {
-        path: "/login",
-        element: <Login></Login>,
+        path: "/profile",
+        element: (
+            <PrivateRoute>
+                <MyProfile></MyProfile>
+            </PrivateRoute>
+        )
       },
       {
-        path: "/register",
-        element: <Register></Register>,
+        path: "/auth",
+        element: <AuthLayout></AuthLayout>,
+        children: [
+          {
+            path: "login",
+            element: <Login></Login>,
+          },
+          {
+            path: "register",
+            element: <Register></Register>,
+          },
+        ],
       },
     ],
   },
   {
     path: "/*",
-    element: <ErrorPage></ErrorPage>
+    element: <ErrorPage></ErrorPage>,
   },
 ]);
 

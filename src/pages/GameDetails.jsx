@@ -47,7 +47,7 @@ const GameDetails = () => {
 
           <div className="md:w-1/2 p-6 flex flex-col justify-between">
             <div>
-              <h1 className="text-8xl sm:text-4xl font-bold text-yellow-400 mb-4 tracking-wide">
+              <h1 className="text-8xl sm:text-xl font-bold text-yellow-400 mb-4 tracking-wide">
                 {title}
               </h1>
 

@@ -1,7 +1,21 @@
-import React from 'react';
-import { Link } from 'react-router';
+import React, { useContext } from 'react';
+import { Link, useNavigate } from 'react-router';
+import { AuthContext } from '../routes/AuthProvider';
 
 const GameCard = ({game}) => {
+
+    const navigate = useNavigate();
+    const { user } = useContext(AuthContext);
+
+  const handleDetailsClick = (id) => {
+  if (!user) {
+    navigate("/auth/login", { state: { from: `/gameDetails/${id}` } });
+  } else {
+    navigate(`/gameDetails/${id}`);
+  }
+};
+
+
     const {coverPhoto, title, category, ratings, id} = game;
     return (
         <div 
@@ -23,6 +37,7 @@ const GameCard = ({game}) => {
       <div className="bg-gray-800 px-5 py-3 text-white flex items-center justify-between">
         <Link
             to={`/gameDetails/${id}`}
+            onClick={() => handleDetailsClick(id)}
           className="bg-green-600 px-3.5 py-1.5 rounded  font-bold"
         >
           Details

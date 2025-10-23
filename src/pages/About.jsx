@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import { Link } from "react-router";
 
 const About = () => {
   useEffect(() => {
@@ -108,7 +109,8 @@ const About = () => {
             conquer — one pixel at a time.
           </p>
 
-          <motion.button
+          <Link to="/auth/register">
+            <motion.button
             whileHover={{
               scale: 1.1,
               boxShadow: "0 0 25px rgba(250,204,21,0.8)",
@@ -119,6 +121,7 @@ const About = () => {
           >
             Join The Hub
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </div>
