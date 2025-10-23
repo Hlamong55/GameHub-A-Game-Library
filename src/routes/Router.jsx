@@ -10,6 +10,7 @@ import ErrorPage from "../pages/ErrorPage";
 import AuthLayout from "../layouts/AuthLayout";
 import PrivateRoute from "./PrivateRoute";
 import MyProfile from "../pages/MyProfile";
+import UpdateProfile from "../pages/UpdateProfile";
 
 const router = createBrowserRouter([
   {
@@ -29,9 +30,9 @@ const router = createBrowserRouter([
       {
         path: "/gameDetails/:id",
         element: (
-            <PrivateRoute>
-                <GameDetails></GameDetails>
-            </PrivateRoute>
+          <PrivateRoute>
+            <GameDetails></GameDetails>
+          </PrivateRoute>
         ),
         loader: async () => fetch("/games.json"),
       },
@@ -42,10 +43,18 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: (
-            <PrivateRoute>
-                <MyProfile></MyProfile>
-            </PrivateRoute>
-        )
+          <PrivateRoute>
+            <MyProfile></MyProfile>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/updateProfile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfile></UpdateProfile>
+          </PrivateRoute>
+        ),
       },
       {
         path: "/auth",
