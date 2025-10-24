@@ -16,7 +16,7 @@ const MyProfile = () => {
 
   const handleLogout = async () => {
     await logOut();
-    navigate("/");
+    navigate("/auth/login");
   };
 
   return (

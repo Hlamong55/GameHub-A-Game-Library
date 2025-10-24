@@ -1,15 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import Swal from "sweetalert2";
-import { signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
+import {
+  signInWithEmailAndPassword,
+  signInWithPopup,
+  GoogleAuthProvider,
+} from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
 import bgImage from "../assets/collected/car9.jpeg";
 
 const Login = () => {
-   useEffect(() => {
-        document.title = "Login | GameHub";
-      }, []);
-
+  useEffect(() => {
+    document.title = "Login | GameHub";
+  }, []);
 
   const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
@@ -20,13 +23,17 @@ const Login = () => {
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
 
     try {
-      const res = await signInWithEmailAndPassword(auth, formData.email, formData.password);
+      const res = await signInWithEmailAndPassword(
+        auth,
+        formData.email,
+        formData.password
+      );
 
       Swal.fire({
         title: "🎮 Welcome Back!",
@@ -38,9 +45,8 @@ const Login = () => {
         confirmButtonText: "Start Gaming 🚀",
       }).then((result) => {
         if (result.isConfirmed) {
-         const from = location.state?.from?.pathname || "";
-        navigate(from, { replace: true });
-
+          const from = location.state?.from?.pathname || "/";
+          navigate(from, { replace: true });
         }
       });
     } catch (err) {
@@ -100,7 +106,9 @@ const Login = () => {
           Welcome Back!
         </h2>
         <p className="text-center text-gray-700 dark:text-gray-300 mb-8 text-lg">
-          Login to your <span className="font-bold text-purple-800">GameHub</span> account to exploring.
+          Login to your{" "}
+          <span className="font-bold text-purple-800">GameHub</span> account to
+          exploring.
         </p>
 
         <form onSubmit={handleSubmit} className="space-y-6">
@@ -136,11 +144,18 @@ const Login = () => {
             />
           </div>
 
+          <button
+            onClick={() => navigate("/auth/resetPass", { state: { email: formData.email } } )}
+            className="font-bold text-gray-800 dark:text-gray-200 hover:text-purple-700 hover:underline cursor-pointer transition-all duration-300"
+          >
+            Forgot Password?
+          </button>
+
           {error && <p className="text-red-500 text-sm">{error}</p>}
 
           <button
             type="submit"
-            className="w-full mt-5 bg-linear-to-r from-slate-900 via-indigo-900 to-purple-900 text-white font-bold shadow-lg 
+            className="w-full mt-3 bg-linear-to-r from-slate-900 via-indigo-900 to-purple-900 text-white font-bold shadow-lg 
                hover:from-purple-900 hover:via-indigo-700 hover:to-slate-800 
                transition-all duration-300 px-6 py-3 rounded-lg"
           >
@@ -148,7 +163,6 @@ const Login = () => {
           </button>
         </form>
 
-        
         <div className="mt-6 text-center">
           <button
             onClick={handleGoogleLogin}
@@ -163,10 +177,12 @@ const Login = () => {
           </button>
         </div>
 
-        
         <p className="mt-6 text-center text-gray-700 dark:text-gray-300">
-          Don’t have an account?{" "}
-          <Link to="/auth/register" className="text-red-600 hover:text-red-700 font-semibold underline">
+          Don't have an account?{" "}
+          <Link
+            to="/auth/register"
+            className="text-red-600 hover:text-red-700 font-semibold underline"
+          >
             Create Now
           </Link>
         </p>

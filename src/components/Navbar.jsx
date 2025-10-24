@@ -9,7 +9,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     await logOut();
-    navigate("/"); 
+    navigate("/auth/login"); 
   };
 
   const activeClass = ({ isActive }) =>
@@ -30,7 +30,7 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="navbar bg-linear-to-r from-slate-900 via-indigo-900 to-purple-900 text-white shadow-lg px-10 py-3">
+    <nav className="navbar bg-linear-to-r from-slate-900 via-indigo-900 to-purple-900 text-white shadow-lg md:px-16 py-3">
       <div className="navbar-start">
         <Link to="/" className="flex items-center gap-2 text-2xl font-extrabold tracking-widest text-yellow-400">
           <Gamepad2 size={35} />
