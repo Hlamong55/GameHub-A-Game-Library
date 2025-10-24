@@ -1,16 +1,38 @@
-# React + Vite
+🎮 Project: GameHub - A Game Library 🎮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 Purpose:
 
-Currently, two official plugins are available:
+GameHub is a dynamic gaming platform that allows users to explore, discover, and manage their favorite games.
+It includes full authentication (login, register, profile, password reset) and provides a stylish, responsive UI built with React and Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+🌐 Live Link:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+beamish-tarsier-2d97c3.netlify.app
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🚀 Key Features:
+
+✅ User Authentication – Secure login, registration, and logout using Firebase Auth.
+✅ Profile Management – Users can update their display name and profile picture instantly.
+✅ Forgot Password – Reset password system that redirects users to Gmail.
+✅ Dynamic Routing – React Router setup with protected routes.
+✅ Responsive UI – Fully mobile-friendly, dark/light adaptable design.
+✅ Sweet Alerts – Stylish popups for success and error messages.
+✅ Dynamic Titles – Each page dynamically sets its document title.
+✅ Modern Aesthetic – Tailwind-powered with gradients, animations, and hover effects.
+
+
+
+🧩 NPM Packages Used:
+
+Package                     Purpose
+
+react         ==> 	    Core UI library
+vite	      ==>       Fast build tool for React
+react-router-dom  ==>   Routing and navigation
+firebase          ==> 	Authentication and backend services
+sweetalert2	      ==>   Custom popup notifications
+tailwindcss       ==>	Styling and responsive design
+react-icons	      ==>   For icons
+
