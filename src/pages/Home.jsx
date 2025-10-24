@@ -18,7 +18,7 @@ const Home = () => {
   };
 
   return (
-    <div className="bg-gray-300">
+    <div className="bg-gray-400">
       <Banner />
       <h1 className="flex justify-center items-center text-6xl font-bold bg-linear-to-r from-slate-900 via-indigo-900 to-purple-500 bg-clip-text text-transparent gap-3 mt-14">
   Popular Games
