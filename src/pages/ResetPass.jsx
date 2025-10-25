@@ -39,7 +39,7 @@ const ResetPass = () => {
         color: "#fff",
         confirmButtonColor: "#facc15",
       }).then(() => {
-        window.location.href = "https://mail.google.com";
+        window.open("https://mail.google.com", "_blank");
       });
     } catch (err) {
       Swal.fire({

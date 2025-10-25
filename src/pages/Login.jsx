@@ -45,8 +45,8 @@ const Login = () => {
         confirmButtonText: "Start Gaming 🚀",
       }).then((result) => {
         if (result.isConfirmed) {
-          const from = location.state?.from?.pathname || "/";
-          navigate(from, { replace: true });
+         const from = location.state?.from || "/";
+        navigate(from, { replace: true });
         }
       });
     } catch (err) {
@@ -76,7 +76,7 @@ const Login = () => {
         confirmButtonText: "Start Exploring 🎮",
       }).then((result) => {
         if (result.isConfirmed) {
-          const from = location.state?.from?.pathname || "/";
+          const from = location.state?.from || "/";
           navigate(from, { replace: true });
         }
       });
