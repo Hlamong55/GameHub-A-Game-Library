@@ -55,10 +55,10 @@ const Home = () => {
         </motion.h1>
       </div>
 
-      <div className="grid w-11/12 mx-auto p-4 mt-8 grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 overflow-hidden">
+      <div className="grid w-11/12 mx-auto mt-6 grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-4 overflow-hidden">
         {[...gamesData]
-          ?.filter((game) => game.ratings >= 4.6 && game.ratings <= 5)
-          .slice(0, 6)
+          ?.filter((game) => game.ratings >= 4.5 && game.ratings <= 5)
+          .slice(0, 8)
           ?.map((game) => (
             <GameCard key={game?.id} game={game} />
           ))}

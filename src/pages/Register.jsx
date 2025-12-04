@@ -18,6 +18,7 @@ const Register = () => {
   });
   const [error, setError] = useState("");
 
+
   const navigate = useNavigate();
   const googleProvider = new GoogleAuthProvider();
 

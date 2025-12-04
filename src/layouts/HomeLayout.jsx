@@ -11,7 +11,7 @@ import Login from '../pages/Login';
 
 const HomeLayout = () => {
     return (
-        <div>
+        <div className='max-w-7xl mx-auto'>
             <header>
                 <Navbar></Navbar>
             </header>

@@ -13,7 +13,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 const Banner = () => {
   return (
     <div className="">
-      <div className="w-full">
+      <div className="">
         <Swiper
           loop={true}
           spaceBetween={30}
@@ -31,7 +31,7 @@ const Banner = () => {
         >
           <SwiperSlide>
             <div
-              className="hero w-full h-[450px] bg-cover bg-center"
+              className="hero w-full h-[380px] bg-cover bg-center"
               style={{
                 backgroundImage: `url(${banner1})`,
               }}
@@ -51,7 +51,7 @@ const Banner = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div
-              className="hero w-full h-[450px] bg-cover bg-center"
+              className="hero w-full h-[380px] bg-cover bg-center"
               style={{
                 backgroundImage: `url(${banner2})`,
               }}
@@ -73,7 +73,7 @@ const Banner = () => {
 
           <SwiperSlide>
             <div
-              className="hero w-full h-[450px] bg-cover bg-center"
+              className="hero w-full h-[380px] bg-cover bg-center"
               style={{
                 backgroundImage: `url(${banner3})`,
               }}

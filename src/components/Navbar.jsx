@@ -26,11 +26,14 @@ const Navbar = () => {
       <li>
         <NavLink to="/about" className={activeClass}>About</NavLink>
       </li>
+      <li>
+        <NavLink to="/support" className={activeClass}>Support</NavLink>
+      </li>
     </>
   );
 
   return (
-    <nav className="navbar bg-linear-to-r from-slate-900 via-indigo-900 to-purple-900 text-white shadow-lg md:px-16 py-3">
+    <nav className="navbar  bg-linear-to-r from-slate-900 via-indigo-900 to-purple-900 text-white shadow-lg md:px-16 py-2">
       <div className="navbar-start">
         <Link to="/" className="flex items-center gap-2 text-2xl font-extrabold tracking-widest text-yellow-400">
           <Gamepad2 size={35} />
@@ -123,3 +126,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute";
 import MyProfile from "../pages/MyProfile";
 import UpdateProfile from "../pages/UpdateProfile";
 import ResetPass from "../pages/ResetPass";
+import Support from "../pages/Support";
 
 const router = createBrowserRouter([
   {
@@ -31,15 +32,17 @@ const router = createBrowserRouter([
       {
         path: "/gameDetails/:id",
         element: (
-          <PrivateRoute>
             <GameDetails></GameDetails>
-          </PrivateRoute>
         ),
         loader: async () => fetch("/games.json"),
       },
       {
         path: "/about",
         element: <About></About>,
+      },
+      {
+        path: "/support",
+        element: <Support></Support>
       },
       {
         path: "/profile",

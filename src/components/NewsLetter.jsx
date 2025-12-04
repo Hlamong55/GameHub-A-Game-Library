@@ -13,7 +13,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className=" mx-auto  p-20  text-white"
+    <div className="w-11/12 mx-auto rounded-xl p-20  text-white"
     style={{
                     backgroundImage: `url(${bgBanner})`,
                     opacity:"unset"

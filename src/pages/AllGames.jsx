@@ -41,7 +41,7 @@ const AllGames = () => {
         </h1>
       </div>
 
-      <div className="grid w-11/12 mx-auto  grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-3 overflow-hidden">
+      <div className="grid w-11/12 mx-auto  grid-cols-1 gap-7 sm:grid-cols-2 md:grid-cols-4 overflow-hidden">
         {allData.map((data) => (
           <AllGamesCard key={data.id} data={data}></AllGamesCard>
         ))}
