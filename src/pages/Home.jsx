@@ -6,6 +6,7 @@ import { Gamepad2 } from "lucide-react";
 import Newsletter from "../components/NewsLetter";
 // eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
+import FAQ from "./FAQ";
 
 const Home = () => {
   useEffect(() => {
@@ -72,7 +73,10 @@ const Home = () => {
           See All Games 🎮
         </button>
       </div>
+     <div className="space-y-6">
+       <FAQ></FAQ>
       <Newsletter></Newsletter>
+     </div>
     </div>
   );
 };
