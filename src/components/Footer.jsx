@@ -1,22 +1,68 @@
 import React from "react";
 import { Gamepad2, Twitter, Facebook, Instagram, Youtube } from "lucide-react";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="bg-linear-to-b from-slate-900 via-indigo-900 to-purple-900 text-gray-300 pt-10 pb-5 border-t border-gray-700">
       <div className="max-w-7xl mx-auto px-6 md:px-10">
-        <div className="flex flex-col md:flex-row justify-between md:items-start gap-10">
-          <div className="flex-1">
+        
+        {/* <div className="flex flex-col md:flex-row justify-between md:items-start gap-10"> */}
+        <div className="grid md:grid-cols-3 gap-8">
+          
+          <div className="flex-1 items-center">
             <div className="flex items-center gap-2 mb-3">
               <Gamepad2 size={50} className="text-yellow-400" />
               <h2 className="text-4xl font-extrabold text-yellow-400">GameHub</h2>
             </div>
-            <p className="  max-w-md text-gray-400">
-              An engaging online library for discovering and supporting game developers. GameHub brings 
-              community-powered feedback to the world of gaming.
+            <p className="max-w-md text-gray-400">
+              An engaging online library for discovering and supporting game developers. 
+              GameHub brings community-powered feedback to the world of gaming.
             </p>
           </div>
 
+          
+          <div className="flex flex-col text-center ">
+            <h3 className="text-xl font-bold mb-3 text-white">Navigation</h3>
+            <nav className="flex gap-5">
+              <NavLink 
+                to="/" 
+                className="hover:text-yellow-300 transition duration-300"
+              >
+                Home
+              </NavLink>
+
+              <NavLink 
+                to="/allGames" 
+                className="hover:text-yellow-300 transition duration-300"
+              >
+                All Games
+              </NavLink>
+
+              <NavLink 
+                to="/support" 
+                className="hover:text-yellow-300 transition duration-300"
+              >
+                Support
+              </NavLink>
+
+              <NavLink 
+                to="/about" 
+                className="hover:text-yellow-300 transition duration-300"
+              >
+                About Us
+              </NavLink>
+
+              <NavLink 
+                to="/contact" 
+                className="hover:text-yellow-300 transition duration-300"
+              >
+                Contact
+              </NavLink>
+            </nav>
+          </div>
+
+  
           <div>
             <h3 className="text-xl font-bold mb-3 text-white text-center">Connect</h3>
             <div className="flex gap-4 justify-center text-gray-400">
@@ -34,6 +80,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
+
         </div>
 
         <div className="my-6 border-t border-gray-500"></div>
